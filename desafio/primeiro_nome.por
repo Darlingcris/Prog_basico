@@ -12,11 +12,7 @@ programa
 		pos = txt.posicao_texto(" ",nome,0)
 		escreva("\nO seu primeiro nome é: ", txt.extrair_subtexto(nome,0,pos),".\n")
 		
-		//nome= txt.substituir(nome," ","-")
-		//escreva("O seu primeiro nome é: ", txt.posicao_texto(" ",nome,0))
-		//escreva("O seu primeiro nome é: "
-		//escreva(p_nome)
-		//escreva("O seu primeiro nome é: ", txt.extrair_subtexto(nome,0,-))
+		
 		
 	}
 }
@@ -25,7 +21,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 237; 
+ * @POSICAO-CURSOR = 308; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

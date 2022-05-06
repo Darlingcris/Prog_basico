@@ -18,7 +18,7 @@ programa
 		escreva("Nome:\t\t",nome,"\n")
 		escreva("Nascimento:\t",ano_nasc,"\n")
 		escreva("Salario:\tR$ ",salario,"\n")
-		escreva("-----------------------------------")
+		escreva("-----------------------------------\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -26,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 441; 
+ * @POSICAO-CURSOR = 275; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
