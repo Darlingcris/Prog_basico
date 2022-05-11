@@ -17,6 +17,7 @@ programa
 
 		escreva("\nDigite a sua opção: ")
 		leia(opcao)
+		escreva("\nVocê escolheu a opção [",opcao,"]\n")
 
 		escreva("\nDigite o primeiro numero: ")
 		leia(n1)
@@ -25,16 +26,16 @@ programa
 
 		escolha (opcao){
 			caso '+':
-				escreva("\nResultado ",n1," + ",n2, " = ",n1+n2)
+				escreva("\nResultado ",n1," + ",n2, " = ",n1+n2,"\n")
 				pare
 			caso '-':
-				escreva("\nResultado ",n1," - ",n2, " = ",n1-n2)
+				escreva("\nResultado ",n1," - ",n2, " = ",n1-n2,"\n")
 				pare
 			caso '*':
-				escreva("\nResultado ",n1," * ",n2, " = ",n1*n2)
+				escreva("\nResultado ",n1," * ",n2, " = ",n1*n2,"\n")
 				pare
 			caso '/':
-				escreva("\nResultado ",n1," / ",n2, " = ",mat.arredondar(n1/n2,2))
+				escreva("\nResultado ",n1," / ",n2, " = ",mat.arredondar(n1/n2,2),"\n")
 				pare	
 			caso contrario:
 				escreva("\nValores inválidos.\n")
@@ -51,7 +52,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 936; 
+ * @POSICAO-CURSOR = 911; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
