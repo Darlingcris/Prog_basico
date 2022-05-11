@@ -1,6 +1,6 @@
 programa
 {
-	inteiro n1,n2
+	inteiro n1,n2
 	
 	funcao inicio()
 	{
@@ -17,6 +17,7 @@ programa
 		}senao {
 			escreva("Não tem como colocar esses valores em ordem. Os números são iguais.")
 		}
+		escreva("\n\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -24,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 146; 
+ * @POSICAO-CURSOR = 422; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
