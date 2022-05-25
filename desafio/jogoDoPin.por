@@ -18,9 +18,10 @@ programa
 				escreva("PIN!\n")
 				num++
 				}
-			u.aguarde(800)
+			senao {u.aguarde(800)
 			escreva(num, " - ")
 			num++
+			}
 		}
 		escreva("Fim!")
 		
@@ -33,7 +34,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 47; 
+ * @POSICAO-CURSOR = 343; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
