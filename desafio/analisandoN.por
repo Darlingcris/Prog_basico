@@ -14,8 +14,7 @@ programa
 			u.aguarde(800)
 			sort=u.sorteia(1,10)
 			escreva(sort, "..")
-			
-			
+				
 
 			se (sort>5){
 				maior++
