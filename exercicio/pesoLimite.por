@@ -52,7 +52,7 @@ programa
 			
 	}
 		escreva("\nAo todo, temos ",sobrepeso," pessoas acima do limite de ",ref," kg.")
-		escreva("\nEntre essas pessoas temos ",masc," Homem (ns) e ",fem, " Mulher(es).")
+		escreva("\nEntre essas pessoas temos ",masc," Homem (ns) e ",fem, " Mulher(es).\n")
 	}
 }
 
@@ -62,7 +62,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1070; 
+ * @POSICAO-CURSOR = 806; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
