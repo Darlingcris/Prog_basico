@@ -12,7 +12,7 @@ programa
 
 		para (i=1;i<=num;i++){
 			u.aguarde(800)
-			sort=u.sorteia(1,10)
+			sort=sorteia(1,10)
 			escreva(sort, "..")
 				
 
@@ -25,6 +25,7 @@ programa
 				}
 			
 			}
+		escreva("Fim.\n")
 		escreva("\nDos ",num," números sorteados: ")
 		escreva("\nExistem ",maior," maior(es) que 5.")
 		escreva("\nExistem ",div," divisível(is) por 3.\n")
@@ -35,7 +36,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 293; 
+ * @POSICAO-CURSOR = 388; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
