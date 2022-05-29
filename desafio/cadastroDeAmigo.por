@@ -1,13 +1,14 @@
 programa
 {
 	inclua biblioteca Texto --> txt
-	inclua biblioteca Tipos --> t
+	inclua biblioteca Tipos --> t
+	inclua biblioteca Matematica --> m
 	
 	funcao inicio()
 	{
-		inteiro idade,cont=0, maior=0, menor=0, media=0
+		inteiro idade,cont=0, maior=0, menor=0,soma=0
 		cadeia nome, nmaior="", nmenor=""
-		
+		real media=0.0
 
 		escreva("\n=====CADASTRO DE AMIGOS=====\n")
 		enquanto (verdadeiro){
@@ -18,14 +19,15 @@ programa
 			escreva("\nNome: ")
 			leia(nome)
 
-			se (nome=="acabou" ou nome=="ACABOU"){
-				escreva("\n*****Interrompido*****\n")
+			se (txt.caixa_alta(nome)=="ACABOU"){
+				
+				escreva("\n  *****Interrompido*****  \n")
 				pare
 				}
 				
 			escreva("Idade: ")
 			leia(idade)
-			
+			cont++
 
 			se (cont==1){
 				maior=idade
@@ -44,14 +46,14 @@ programa
 					}
 				}
 
-			cont++
-			media += idade
+			soma += idade
+			media = t.inteiro_para_real(soma)/cont
 				
 			}
 			escreva("\nTotal de amigos cadastrados: ",cont)
 			escreva("\nSeu amigo mais velho é ",txt.caixa_alta(nmaior)," com ",maior," anos.")
 			escreva("\nSeu amigo mais jovem é ",txt.caixa_alta(nmenor)," com ",menor," anos.")
-			escreva("\nA média de idade do grupo é de ",t.inteiro_para_real(media)/cont, " anos.\n")
+			escreva("\nA média de idade do grupo é de ",m.arredondar(media,2), " anos.\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -59,7 +61,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 736; 
+ * @POSICAO-CURSOR = 489; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
