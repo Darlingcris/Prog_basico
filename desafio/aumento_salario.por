@@ -14,7 +14,7 @@ programa
 		leia(salario)
 				
 		escreva("-----RESULTADO-----")
-		escreva("\n",nome," ganhava R$",salario," e depois de ganhar ", aumento,"% de aumento, receberá R$", salario+(salario*12)/100,"\n")
+		escreva("\n",nome," ganhava R$",salario," receberá R$", salario+(salario*12)/100,"\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -22,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 384; 
+ * @POSICAO-CURSOR = 305; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
