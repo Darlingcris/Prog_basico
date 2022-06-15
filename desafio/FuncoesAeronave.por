@@ -1,7 +1,6 @@
 programa
 {
-	inclua biblioteca Tipos --> t
-	
+	inclua biblioteca Matematica --> m
 	
 	funcao real rota(real n1, real m1){         //tipo 1 - trecho principal
 		  real r=0.0
@@ -21,7 +20,7 @@ programa
 			retorne s
 		}
 
-	funcao real total(real n4, real n5){        //tipo 4 - trecho principal+trecho alternativo+margem de segurança
+	funcao real total(real n4, real n5){        //tipo 4 - trecho principal+trecho alternativo+margem de segurança= (PAS)
 		
 			real s = n4 + n5
 			real tot = s + ((s * 30)/100)
@@ -35,11 +34,9 @@ programa
 		
 		}
 
-	funcao cadeia situacao(real n8,real n9){   //tipo 6 - somatoria (PAS) - combus_tanque <= capacidade do tanque
+	funcao cadeia situacao(real n8,real n9){   //tipo 6 - somatoria (PAS) <= cap_max
 			
-			real t= combustivel(n8, n9)
-			
-			se (t <= n9){
+			se (n8 <= n9){
 				retorne "\nVÔO APROVADO, BOA VIAGEM!\n"
 			}senao{
 				retorne "\nVÔO REPROVADO, REVEJA O SEU PLANEJAMENTO.\n"
@@ -49,7 +46,7 @@ programa
 	funcao inicio()
 	{
 		
-		real trecho, t_alternativo, cap_max, abastecimento, margem_seg, combus_tanque, media	
+		real trecho, t_alternativo, cap_max, combus_tanque, media	
 
 	
 		escreva("\n--------------------------------------------------")
@@ -68,43 +65,36 @@ programa
 		leia(media)
 	
 		
-		real tipo = rota(trecho,media)
+		real tipo1 = rota(trecho,media)
 		real tipo2 = alt(t_alternativo,media)
-		real tipo3 = seg(trecho)
-		real tipo4 = total(trecho, t_alternativo)
+		real tipo3 = seg(tipo1)	 
+		real tipo4 = total(tipo1, tipo2)
 		real tipo5 = combustivel(tipo4,combus_tanque)
 		cadeia tipo6 = situacao(tipo5,cap_max)
 		
 		
-		//abastecimento =trecho + t_alternativo
-		//margem_seg = abastecimento + ((abastecimento * 30) /100)
 		
-			//se (margem_seg <= cap_max){
-				escreva("\nTrecho Principal: ",tipo," l.")  //trecho principal
-				
-				escreva("\nTrecho Alternativo: ",tipo2," l.") //trecho alternativo
-				
-				escreva("\nTotal do trecho com a margem de segurança: ",tipo3," l.") //trecho principal + margem de segurança
-				
-				escreva("\nQuantidade de combustível necessária para o trecho: ",tipo4," l.") //trecho principal+trecho alternativo+margem de segurança
-				
-				escreva("\nQuantidade necessária de abastecimento: ",tipo5," l.") //somatoria (PAS) - combus_tanque
-				
-				//escreva("\nVÔO APROVADO, BOA VIAGEM!\n")
-			/*}
-			senao{
-				escreva("VÔO REPROVADO, REVEJA O SEU PLANEJAMENTO.")*/
-				
-				
-			}		
-		}
-	}
+		escreva("\nTrecho Principal: ",m.arredondar(tipo1,2)," l.")  //trecho principal * media
+					
+		escreva("\nTrecho Alternativo: ",m.arredondar(tipo2,2)," l.") //trecho alternativo * media
+					
+		escreva("\nTotal do trecho com a margem de segurança: ",m.arredondar(tipo3,2)," l.") //(trecho principal * media) + margem de segurança
+					
+		escreva("\nQuantidade de combustível necessária para o trecho: ",m.arredondar(tipo4,2)," l.") //(trecho principal * media) + (trecho alternativo * media) + margem de segurança
+					
+		escreva("\nQuantidade necessária de abastecimento: ",m.arredondar(tipo5,2)," l.\n") //somatoria (PAS) - combus_tanque
+					
+		escreva("\n======================================== ",tipo6,"========================================\n")
+						
+	}		
+}
+	
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2786; 
+ * @POSICAO-CURSOR = 1781; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
