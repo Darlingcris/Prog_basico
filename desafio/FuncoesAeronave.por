@@ -67,7 +67,7 @@ programa
 		
 		real tipo1 = rota(trecho,media)
 		real tipo2 = alt(t_alternativo,media)
-		real tipo3 = seg(tipo1)	 
+		real tipo3 = seg(tipo1)//trecho
 		real tipo4 = total(tipo1, tipo2)
 		real tipo5 = combustivel(tipo4,combus_tanque)
 		cadeia tipo6 = situacao(tipo5,cap_max)
@@ -94,7 +94,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1781; 
+ * @POSICAO-CURSOR = 1787; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
