@@ -26,7 +26,7 @@ programa
 			para(inteiro l=0; l<u.numero_linhas(soma); l++){
 				u.aguarde(300)
 				escreva(soma[l][c])
-				se (l < u.numero_linhas(soma)-1){ //para colocar o sinal de igual
+				se (l < u.numero_linhas(soma)-1){ // -1 para colocar o sinal de igual
 					escreva("\t+\t")
 				}senao{
 					escreva("\t=\t")
@@ -48,7 +48,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 715; 
+ * @POSICAO-CURSOR = 62; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
