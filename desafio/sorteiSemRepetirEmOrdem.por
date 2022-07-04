@@ -7,7 +7,7 @@ programa
 		inteiro vet[10], p=0
 		logico encontrou
 
-		//SORTEIA SEM REPETIçAO
+		//SORTEIA SEM REPETIçAO  ***SWAPP
 		enquanto (p<u.numero_elementos(vet)){
 			vet[p]=sorteia(1,20)
 			encontrou=falso
@@ -23,7 +23,7 @@ programa
 			}
 		inteiro aux=0
 
-		//ORDENA O VETOR ***SWAPP
+		//ORDENA O VETOR ***BUBBLE SORT
 		para (inteiro pr=0; pr<u.numero_elementos(vet)-1;pr++){
 			para (inteiro s=pr+1;s<u.numero_elementos(vet);s++){
 				se(vet[pr]>vet[s]){	
@@ -47,7 +47,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 690; 
+ * @POSICAO-CURSOR = 417; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {vet, 7, 10, 3};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
